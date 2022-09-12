@@ -116,7 +116,8 @@ span {
   cursor: pointer;
 }
 
-#calculator button.activate-button {
+#calculator button.activate-button,
+button.reset-button {
   padding: 1em 5.1em;
   background-color: #21302b;
   color: #2ea4ee;
@@ -191,4 +192,10 @@ span {
   border: none;
   border-radius: 0.3em;
   text-align: center;
+}
+
+#reset-bomb-state {
+  font-size: 1em;
+  background-color: #3d0000;
+  color: #e8001f;
 }

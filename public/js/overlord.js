@@ -37,6 +37,10 @@ trigger = {
     this.stack.pop();
     this.update_display();
   },
+
+  reset: function () {
+    window.location = "/overlord";
+  },
 };
 
 timer = {
@@ -141,6 +145,10 @@ $(document).ready(function () {
 
   $("#change-bomb-state").click(function (e) {
     trigger.activate();
+  });
+
+  $("#reset-bomb-state").click(function (e) {
+    trigger.reset();
   });
 
   if ($("#timer-started").val() == "true") {

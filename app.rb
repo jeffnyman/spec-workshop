@@ -38,6 +38,8 @@ module Project
     end
 
     post "/overlord" do
+      session.clear if session[:activate]
+      
       # The params came from the name attribute on the form element.
       session[:activate] = params[:activation_code]
       session[:deactivate] = params[:deactivation_code]
