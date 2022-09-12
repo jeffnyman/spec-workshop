@@ -1,6 +1,6 @@
 module OverlordHelper
   def provision_bomb
-    trigger = Trigger.new(activate: session[:activate_code], deactivate: session[:deactivate_code])
+    trigger = Trigger.new(activate: session[:activate], deactivate: session[:deactivate])
 
     set_countdown
 

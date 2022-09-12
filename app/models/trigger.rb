@@ -55,6 +55,8 @@ class Trigger
   end
 
   def setup_activation_code
+    # @activation_code = @options[:activate]
+
     if @options[:activate].nil? || @options[:activate].empty?
       @activation_code = DEFAULT_ACTIVATION_CODE
     else

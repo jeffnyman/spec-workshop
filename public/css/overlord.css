@@ -141,7 +141,10 @@ span {
   color: #d1ee2e;
 }
 
-.error {
+.error,
+.invalid_code,
+.invalid_activation,
+.invalid_deactivation {
   display: block;
   width: 60%;
   padding: 5px;
