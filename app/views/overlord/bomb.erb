@@ -1,0 +1,10 @@
+<img src="img/bomb.png" class="page-image" id="overlord-logo" alt="Bomb">
+<% if @bomb.detonated? %>
+<%= erb :"overlord/detonate" %>
+<% else %>
+<div class="components">
+  <div><%= erb :"overlord/trigger" %></div>
+  <div><%= erb :"overlord/timer" %></div>
+  <div><%= erb :"overlord/device" %></div>
+</div>
+<% end %>

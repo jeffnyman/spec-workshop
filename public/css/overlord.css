@@ -1,0 +1,203 @@
+.overlord-form label,
+span {
+  color: yellow;
+}
+
+.overlord-form input[type="text"] {
+  margin-bottom: 25px;
+}
+
+.overlord-form input[type="text"] {
+  display: block;
+  /* margin: 2em auto; */
+  border: none;
+  padding: 0;
+  width: 6ch;
+  background: repeating-linear-gradient(
+      90deg,
+      yellow 0,
+      yellow 1ch,
+      transparent 0,
+      transparent 1.5ch
+    )
+    0 100%/10ch 2px no-repeat;
+  font: 2ch droid sans mono, consolas, monospace;
+  letter-spacing: 0.5ch;
+}
+
+.overlord-form input[type="text"]:focus {
+  outline: none;
+  color: dodgerblue;
+}
+
+.overlord-form input[type="submit"] {
+  margin-top: 50px;
+  background: #e62143;
+  border-radius: 11px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  font-size: 1.15em;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 33.4929px;
+  padding: 0.8em 1em;
+  text-align: center;
+  text-decoration: none;
+  text-decoration-skip-ink: auto;
+  text-shadow: rgba(0, 0, 0, 0.3) 1px 1px 1px;
+  text-underline-offset: 1px;
+  transition: all 0.2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  word-break: break-word;
+  border: 0;
+}
+
+/* .provision-error {
+  display: block;
+  font-weight: bold;
+  background: #990000;
+  color: white;
+  border: 1px solid #ccc;
+} */
+
+.error {
+  font-size: 0.7em;
+  display: block;
+  font-weight: bold;
+  background: #990000;
+  color: white;
+  border: 1px solid #ccc;
+}
+
+/* Calculator */
+
+#calculator {
+  background-color: #918764;
+  width: 12.5em;
+  padding: 2em 0 0.8em;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.output {
+  box-shadow: inset 0 1.6em rgba(255, 255, 255, 0.1);
+  /*font-family: 'Krona One', sans-serif;*/
+  font-size: 1em;
+  background-color: #3d0000;
+  color: #e8001f;
+  width: 5em;
+  padding: 0 0.7em;
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+  margin: 0 auto 0.3em;
+  border: none;
+  border-radius: 0.3em;
+}
+
+.squareborder {
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.2),
+    inset 0 1px 3px rgba(0, 0, 0, 0.4);
+  border-radius: 0.2em;
+  margin: 1px;
+  padding: 2px;
+}
+
+#calculator button {
+  /* font-family: "Krona One", sans-serif; */
+  background-color: #988d6d;
+  color: #fffde7;
+  border: none;
+  width: 4.6em;
+  margin: 0.3em;
+  padding: 0.7em 0.6em;
+  border-radius: 4em;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3),
+    inset 0 1px 1px rgba(255, 255, 255, 0.2);
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+#calculator button.activate-button {
+  padding: 1em 5.1em;
+  background-color: #21302b;
+  color: #2ea4ee;
+}
+
+#calculator span.delete-button {
+  background-color: #988d6d;
+  color: #fffde7;
+  border: none;
+  width: 4.6em;
+  margin: 0.3em;
+  padding: 0em 3em;
+  border-radius: 4em;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3),
+    inset 0 1px 1px rgba(255, 255, 255, 0.2);
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  /* ---- */
+  /* padding: 1em 8.1em; */
+  background-color: #21302b;
+  color: #d1ee2e;
+}
+
+.error,
+.invalid_code,
+.invalid_activation,
+.invalid_deactivation {
+  width: 60%;
+  padding: 5px;
+  font-weight: bold;
+  font-size: 0.8em;
+  margin: 20px;
+  background: #990000;
+  color: white;
+  border: 1px solid #ccc;
+}
+
+.bomb-status {
+  background-color: #988d6d;
+  font-size: 0.8em;
+  color: #fffde7;
+  border: none;
+  width: 15.6em;
+  margin-bottom: 1em;
+  border-radius: 4em;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3),
+    inset 0 1px 1px rgba(255, 255, 255, 0.2);
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.timer-display {
+  background-color: #918764;
+  width: 12.5em;
+  padding-bottom: 10px;
+}
+
+#timer-output {
+  box-shadow: inset 0 1.6em rgba(255, 255, 255, 0.1);
+  font-size: 1em;
+  background-color: #3d0000;
+  color: #e8001f;
+  width: 5em;
+  padding: 0 0.7em;
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+  margin: 0 auto 0.3em;
+  border: none;
+  border-radius: 0.3em;
+  text-align: center;
+}

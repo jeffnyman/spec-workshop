@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="auto" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spec Workshop</title>
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/personalize.css">
+  <link rel="stylesheet" href="/css/fonts.css">
+  <link rel="stylesheet" href="/css/site.css">
+  <link rel="stylesheet" href="/css/overlord.css">
+  <script type="module">
+    document.documentElement.classList.replace("no-js", "js");
+  </script>
+</head>
+<body>
+  <header>
+    <h1 class="title"><%= settings.name %> <span class="subtitle">Spec<br />Writing<br />Practice</span></h1>
+  </header>
+  <main>
+    <article>
+      <%= styled_flash %>
+      <%= yield %>
+    </article>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js" integrity="sha512-rstIgDs0xPgmG6RX1Aba4KV5cWJbAMcvRCVmglpam9SoHZiUCyQVDdH2LPlxoHtrv17XWblE/V/PP+Tr04hbtA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="/js/fluid.js"></script>
+  <script src="/js/overlord.js"></script>
+</body>
+</html>

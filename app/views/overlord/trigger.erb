@@ -1,0 +1,54 @@
+<div class="trigger-display" id="trigger">
+  <div id="calculator">
+    <% if trigger.activated? %>
+    <span class="bomb-status">Bomb is active.</span>
+    <% else %>
+    <span class="bomb-status">Bomb is inactive.</span>
+    <% end %>
+
+    <div id="trigger-code-display">
+      <input class="output" id="trigger-code" type="text">
+    </div>
+
+    <div class="row" id="trigger-deleter">
+      <span class="delete-button" id="trigger-delete">Delete</span>
+    </div>
+
+    <div class="row">
+      <% (7..9).each do |num| %>
+      <span class="squareborder">
+        <button data-value="<%= num %>"><%= num %></button>
+      </span>
+      <% end %>
+    </div>
+
+    <div class="row">
+      <% (4..6).each do |num| %>
+      <span class="squareborder">
+        <button data-value="<%= num %>"><%= num %></button>
+      </span>
+      <% end %>
+    </div>
+
+    <div class="row">
+      <% (1..3).each do |num| %>
+      <span class="squareborder">
+        <button data-value="<%= num %>"><%= num %></button>
+      </span>
+      <% end %>
+    </div>
+
+    <div class="row">
+      <span class="squareborder">
+        <button data-value="0">0</button>
+      </span>
+      <span class="squareborder">
+        <% if trigger.activated? %>
+        <button class="activate-button" id="change-bomb-state" type="submit">Deactivate</button>
+        <% else %>
+        <button class="activate-button" id="change-bomb-state" type="submit">Activate</button>
+        <% end %>
+      </span>
+    </div>
+  </div>
+</div>

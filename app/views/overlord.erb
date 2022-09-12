@@ -1,0 +1,28 @@
+<section>
+  <img src="img/mad-scientist.png" class="page-image" id="overlord-logo" alt="Mad Scientist for Project Overlord">
+
+  <h2 class="panel-title">Project Overlord &mdash; Business is <ins>Booming</ins>!</h2>
+  <h3>Don't go <strong><ins>fission</ins></strong> for more! Avoid the con<strong><ins>fusion</ins></strong> of choice!</h3>
+  <p>
+    Let's provision your bomb. Your bomb will come with some default settings that should be fine
+    for your destruction needs. However, you can customize a few aspects of your bomb. Fill in the
+    details below or leave our defaults in place.
+  </p>
+
+  <form action="/overlord" id="provision-bomb-form" class="overlord-form" method="post">
+    <%# <label for="activation-code">Activation Code</label>
+    <span><em>Default: 1234</em></span>
+    <input id="activation-code" name="activation_code" type="text"> %>
+
+    <label for="activation-code">Activation Code</label>
+    <input maxlength="4" value="1234" data-lpignore="true" id="activation-code" name="activation_code" type="text">
+
+    <label for="deactivation-code">Deactivation Code</label>
+    <input maxlength="4" value="0000" data-lpignore="true" id="deactivation-code" name="deactivation_code" type="text">
+
+    <label for="countdown-value">Countdown Duration (in seconds)</label>
+    <input maxlength="4" value="30" data-lpignore="true" id="countdown-value" name="countdown_value" type="text">
+
+    <input id="provision-bomb" class="provision-bomb" value="Provision" type="submit">
+  </form>
+</section>

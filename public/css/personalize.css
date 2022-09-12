@@ -1,0 +1,67 @@
+::before,
+::after {
+  text-decoration: inherit;
+  vertical-align: inherit;
+}
+
+:where(:root) {
+  text-size-adjust: 100%;
+}
+
+:where(html, body) {
+  overscroll-behavior-y: none;
+}
+
+:where(body) {
+  text-rendering: optimizeSpeed;
+}
+
+:where(img) {
+  height: auto;
+  max-width: 100%;
+}
+
+:where(p) {
+  margin: 2em 0;
+}
+
+:where(i, em) {
+  font-style: italic;
+}
+
+:where(b, strong) {
+  font-weight: bolder;
+}
+
+:where(ins) {
+  text-decoration: underline;
+}
+
+:where(h1) {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+:where(h2) {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+
+:where(h3) {
+  margin-top: 1.5rem;
+  font-size: 1.25rem;
+}
+
+@media (prefers-reduced-motion: reduce), (update: slow) {
+  *,
+  ::before,
+  ::after {
+    animation-delay: -1ms !important;
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    background-attachment: initial !important;
+    scroll-behavior: auto !important;
+    transition-delay: 0s !important;
+    transition-duration: 0s !important;
+  }
+}

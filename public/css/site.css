@@ -1,0 +1,138 @@
+html.no-js {
+  font-size: clamp(1rem, 0.8rem + 1vw, 2rem);
+}
+
+html {
+  min-height: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  background-color: #334873;
+  background-image: url(../img/workshop-bg.png);
+}
+
+body {
+  flex-grow: 1;
+}
+
+header {
+  border-top: solid 10px #fff;
+  padding: 10px 0;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+article {
+  line-height: 1.5;
+  line-height: calc(1.618em + (1ex - 1ch));
+  letter-spacing: 0.12em;
+  word-spacing: 0.16em;
+
+  max-width: 25rem;
+  margin: 3.125rem auto;
+}
+
+section {
+  padding-bottom: 3em;
+  border-bottom: solid 1px rgba(255, 255, 255, 0.5);
+}
+
+@media (min-width: 38rem) {
+  article {
+    max-width: 32rem;
+  }
+}
+
+@media (min-width: 56rem) {
+  article {
+    max-width: 38rem;
+  }
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "ColaborateRegular", Arial, sans-serif;
+}
+
+h1 {
+  color: white;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);
+  border-bottom: solid 1px rgba(255, 255, 255, 0.5);
+  margin-bottom: 0.75em;
+}
+
+h2 {
+  font-size: 1.2em;
+  color: rgb(143, 180, 255);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);
+}
+
+h3 {
+  margin-top: 0;
+  font-size: 0.8em;
+  color: rgb(227, 198, 133);
+}
+
+h4 {
+  color: rgb(227, 198, 133);
+}
+
+p {
+  color: white;
+  margin-bottom: 10px;
+  font-family: "ColaborateLightRegular", Arial, sans-serif;
+}
+
+a {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+a:visited {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+a:hover {
+  color: #007fff;
+  text-decoration: dotted;
+}
+
+.title {
+  letter-spacing: -1px;
+  color: #c39733;
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.25);
+  font-family: "ColaborateThinRegular", Arial, sans-serif;
+}
+
+.title span {
+  color: #776847;
+  top: -0.18em;
+  display: inline-block;
+  text-shadow: none;
+  position: relative;
+  font-family: "ColaborateRegular", Arial, sans-serif;
+}
+
+.title span.subtitle {
+  font-size: 0.5em;
+  font-style: italic;
+  color: white;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);
+  top: 0.1em;
+  left: 0.5em;
+  line-height: 120%;
+  text-align: right;
+  background-color: #6e8ac3;
+  padding: 0.25em 0.5em 0.25em 1em;
+  -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.75);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.75);
+}
+
+.page-image {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
