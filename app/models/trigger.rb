@@ -55,18 +55,18 @@ class Trigger
   end
 
   def setup_activation_code
-    if @options[:activate_code].nil? || @options[:activate_code].empty?
+    if @options[:activate].nil? || @options[:activate].empty?
       @activation_code = DEFAULT_ACTIVATION_CODE
     else
-      @activation_code = @options[:activate_code]
+      @activation_code = @options[:activate]
     end
   end
 
   def setup_deactivation_code
-    if @options[:deactivate_code].nil? || @options[:deactivate_code].empty?
+    if @options[:deactivate].nil? || @options[:deactivate].empty?
       @deactivation_code = DEFAULT_DEACTIVATION_CODE
     else
-      @deactivation_code = @options[:deactivate_code]
+      @deactivation_code = @options[:deactivate]
     end
   end
 end

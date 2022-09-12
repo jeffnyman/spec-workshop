@@ -25,6 +25,7 @@ module Project
       set :server, :puma
       set :name, "Spec Workshop"
       set :views, "app/views"
+      set :session_secret, "spatially foliated hypersurface with temporal coordinates"
     end
 
     get "/" do
@@ -38,8 +39,8 @@ module Project
 
     post "/overlord" do
       # The params came from the name attribute on the form element.
-      session[:activate_code] = params[:activation_code]
-      session[:deactivate_code] = params[:deactivation_code]
+      session[:activate] = params[:activation_code]
+      session[:deactivate] = params[:deactivation_code]
       session[:countdown] = params[:countdown_value]
 
       redirect to("/bomb")
