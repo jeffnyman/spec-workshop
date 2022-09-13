@@ -4,6 +4,8 @@
 
 - https://stackoverflow.com/questions/44221250/redirecting-to-a-page-after-submitting-form-in-html
 
+- https://stackoverflow.com/questions/4852489/jquery-validate-required-when-losing-focus-or-pressing-keys-only-last-modifi
+
 - https://www.ruby-toolbox.com/projects/pmq20/ruby-packer
 
 - https://stackoverflow.com/questions/60875799/i-want-to-recreate-a-calculator-keyboard-with-css

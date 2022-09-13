@@ -85,6 +85,13 @@ timer = {
 };
 
 $(document).ready(function () {
+  $("input").blur(function () {
+    if (!$(this).valid()) {
+      $(this).focus();
+      return false;
+    }
+  });
+
   $("#provision-bomb-form").validate({
     rules: {
       activation_code: {
