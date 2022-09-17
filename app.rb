@@ -1,5 +1,7 @@
 #!/usr/bin/env ruby
 
+require "rack"
+
 require "sinatra/base"
 require "sinatra/reloader"
 require "sinatra/flash"
@@ -13,6 +15,8 @@ require_relative "app/models/timer"
 
 module Project
   class Workshop < Sinatra::Base
+    use Rack::Session::Pool, path: "/", expire_after: 2592000
+
     register Sinatra::Reloader
     register Sinatra::Flash
 
@@ -21,19 +25,14 @@ module Project
 
     configure do
       enable :sessions
+      enable :logging
+      enable :dump_errors
+      enable :method_override
 
       set :server, :puma
       set :name, "Spec Workshop"
       set :views, "app/views"
       set :session_secret, "spatially foliated hypersurface with temporal coordinates"
-    end
-
-    configure :development, :test do
-      set :force_ssl, false
-    end
-
-    configure :production do
-      set :force_ssl, true
     end
 
     get "/" do
@@ -67,7 +66,7 @@ module Project
       timer.reset(params[:seconds].to_i)
     end
 
-    get '/enter/:code?' do
+    get "/enter/:code?" do
       @bomb = session[:bomb]
 
       if trigger.valid?(params[:code])

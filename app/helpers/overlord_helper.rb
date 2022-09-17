@@ -22,7 +22,7 @@ module OverlordHelper
   private
 
   def set_countdown
-    return unless session[:countdown].empty?
+    return unless session[:countdown].nil? || session[:countdown].empty?
     session[:countdown] = 30
   end
 
