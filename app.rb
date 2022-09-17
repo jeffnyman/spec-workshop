@@ -28,6 +28,14 @@ module Project
       set :session_secret, "spatially foliated hypersurface with temporal coordinates"
     end
 
+    configure :development, :test do
+      set :force_ssl, false
+    end
+
+    configure :production do
+      set :force_ssl, true
+    end
+
     get "/" do
       erb :index
     end
