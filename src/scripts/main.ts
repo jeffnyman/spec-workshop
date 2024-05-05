@@ -1,3 +1,3 @@
-import "../../site.css";
+import "../styles/site.css";
 
 console.log("Spec Workshop");
