@@ -1,1 +1,20 @@
 @import url("./reset.css");
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:where(html, body) {
+  overscroll-behavior-y: none;
+}
+
+body {
+  min-height: 100svh;
+  background-color: hsla(220, 39%, 33%, 1);
+  background-image: url("../images/workshop-bg.png");
+  font-size: 1.25rem;
+}
