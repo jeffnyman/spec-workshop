@@ -1,0 +1,15 @@
+{
+  "name": "@jeffnyman/spec-workshop",
+  "private": true,
+  "type": "module",
+  "version": "0.1.0",
+  "description": "An Application Set for Spec Workshop Assessments",
+  "author": "Jeff Nyman (https://testerstories.com)",
+  "license": "MIT",
+  "keywords": [
+    "testing",
+    "assessment",
+    "workshop",
+    "automation"
+  ]
+}
