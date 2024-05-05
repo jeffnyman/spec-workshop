@@ -11,5 +11,13 @@
     "assessment",
     "workshop",
     "automation"
-  ]
+  ],
+  "scripts": {
+    "start": "vite --host",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.2.11"
+  }
 }
