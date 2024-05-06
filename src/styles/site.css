@@ -18,3 +18,37 @@ body {
   background-image: url("../images/workshop-bg.png");
   font-size: 1.25rem;
 }
+
+header {
+  position: relative;
+  margin-bottom: 20px;
+  padding: 10px 0;
+  border-top: solid 10px hsla(0, 0%, 100%, 1);
+  font-family: "Bangers";
+}
+
+header h1 {
+  color: hsla(42, 59%, 48%, 1);
+  text-shadow: 2px 2px 1px hsla(0, 0%, 0%, 0.25);
+}
+
+header h1 span {
+  position: relative;
+  display: inline-block;
+  top: -0.18em;
+  color: hsla(43, 26%, 36%, 1);
+}
+
+header h1 span.subtitle {
+  top: 0.1em;
+  left: 0.5em;
+  padding: 0.25em 0.5em 0.25em 1em;
+  color: white;
+  font-size: 0.5em;
+  font-style: italic;
+  line-height: 120%;
+  text-align: right;
+  background-color: hsla(220, 41%, 60%, 1);
+  box-shadow: 1px 1px 2px hsla(0, 0%, 0%, 0.75);
+  text-shadow: 1px 1px 1px hsla(0, 0%, 0%, 0.75);
+}
