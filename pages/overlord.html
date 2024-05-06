@@ -28,7 +28,7 @@
 
       <div class="row">
         <div class="column">
-          <form>
+          <form class="provision-device-form" name="provision-device-form">
             <label for="activation_value">Activation Code</label>
             <input maxlength="4" data-lpignore="true" id="activation-value" name="activation_value" value="1234" type="text">
 
@@ -37,6 +37,8 @@
 
             <label for="deactivation_value">Timer Countdown (in seconds)</label>
             <input maxlength="4" data-lpignore="true" id="countdown-value" name="countdown_value" value="30" type="text">
+
+            <input id="provision-device" value="Provision" type="button">
           </form>
         </div>
       </div>

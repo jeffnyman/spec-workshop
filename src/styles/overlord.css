@@ -10,4 +10,52 @@
   flex-direction: column;
   flex-basis: 100%;
   flex: 1;
+  align-items: center;
+}
+
+/* PROVISION FORM */
+
+.provision-device-form label {
+  color: yellow;
+  font-size: 130%;
+  letter-spacing: 0.2ch;
+}
+
+.provision-device-form input[type="text"] {
+  display: block;
+  padding: 0;
+  margin-bottom: 25px;
+  border: none;
+  width: 6ch;
+  background: repeating-linear-gradient(
+      90deg,
+      yellow 0,
+      yellow 1ch,
+      transparent 0,
+      transparent 1.5ch
+    )
+    0 100%/10ch 2px no-repeat;
+  font: 3ch droid sans mono, consolas, monospace;
+  letter-spacing: 0.5ch;
+}
+
+.provision-device-form input[type="text"]:focus {
+  outline: none;
+  color: dodgerblue;
+}
+
+.provision-device-form input[type="button"] {
+  cursor: pointer;
+  margin-top: 30px;
+  padding: 0.8em 1em;
+  border-radius: 11px;
+  background: #e62143;
+  color: #fff;
+  font-size: 1.15em;
+  text-shadow: rgba(0, 0, 0, 0.3) 1px 1px 1px;
+  transition: all 0.2s ease-in-out;
+}
+
+.provision-device-form input[type="button"]:disabled {
+  background: grey;
 }
