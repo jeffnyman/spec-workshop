@@ -58,6 +58,24 @@ article {
   text-align: center;
 }
 
+footer {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  background: hsla(0, 0%, 20%, 1);
+  color: hsla(0, 0%, 100%, 1);
+}
+
+footer span,
+footer img {
+  margin: 0 5px;
+}
+
 .page-image {
   position: absolute;
   right: 0;
