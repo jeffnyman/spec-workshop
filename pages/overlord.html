@@ -23,9 +23,22 @@
     <article>
       <img src="/images/mad-scientist.png" class="page-image" alt="Mad Scientist for Project Overlord">
 
-      <p>
-        Project Overlord
-      </p>
+      <h2>Project Overlord</h2>
+
+      <div class="row">
+        <div class="column">
+          <form>
+            <label for="activation_value">Activation Code</label>
+            <input maxlength="4" data-lpignore="true" id="activation-value" name="activation_value" value="1234" type="text">
+
+            <label for="deactivation_value">Deactivation Code</label>
+            <input maxlength="4" data-lpignore="true" id="deactivation-value" name="deactivation_value" value="0000" type="text">
+
+            <label for="deactivation_value">Timer Countdown (in seconds)</label>
+            <input maxlength="4" data-lpignore="true" id="countdown-value" name="countdown_value" value="30" type="text">
+          </form>
+        </div>
+      </div>
     </article>
   </main>
 
