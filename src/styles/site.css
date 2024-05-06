@@ -16,7 +16,7 @@
 body {
   min-height: 100svh;
   background-color: hsla(220, 39%, 33%, 1);
-  background-image: url("../images/workshop-bg.png");
+  background-image: url("/images/workshop-bg.png");
   font-size: 1.25rem;
 }
 
