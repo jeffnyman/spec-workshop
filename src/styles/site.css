@@ -52,3 +52,14 @@ header h1 span.subtitle {
   box-shadow: 1px 1px 2px hsla(0, 0%, 0%, 0.75);
   text-shadow: 1px 1px 1px hsla(0, 0%, 0%, 0.75);
 }
+
+article {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.page-image {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
