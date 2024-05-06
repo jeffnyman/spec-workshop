@@ -1,3 +1,4 @@
+@import url("./fonts.css");
 @import url("./reset.css");
 
 :root {
@@ -56,6 +57,7 @@ header h1 span.subtitle {
 article {
   margin: 0 auto;
   text-align: center;
+  font-family: "Bangers", serif;
 }
 
 footer {
