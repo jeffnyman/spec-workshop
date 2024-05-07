@@ -1,3 +1,7 @@
 import "../styles/site.css";
 
-console.log("Spec Workshop");
+import $ from "jquery";
+
+$(document).ready(function () {
+  console.log("Spec Workshop");
+});
