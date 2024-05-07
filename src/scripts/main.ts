@@ -19,5 +19,6 @@ $(document).ready(function () {
     console.log(`DEBUG: coutdown: ${countdown}`);
 
     $("#provision-device").prop("disabled", true);
+    $("#trigger").removeClass("hidden");
   });
 });

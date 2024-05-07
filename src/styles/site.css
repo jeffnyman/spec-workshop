@@ -92,3 +92,7 @@ a:hover {
   right: 0;
   top: 0;
 }
+
+.hidden {
+  display: none;
+}
