@@ -2,6 +2,16 @@ import "../styles/site.css";
 
 import $ from "jquery";
 
+interface Trigger {
+  resetDevice: () => void;
+}
+
+const trigger: Trigger = {
+  resetDevice: function () {
+    console.log("Resetting device.");
+  },
+};
+
 $(document).ready(function () {
   console.log("Spec Workshop");
 
@@ -20,5 +30,9 @@ $(document).ready(function () {
 
     $("#provision-device").prop("disabled", true);
     $("#trigger").removeClass("hidden");
+  });
+
+  $("#reset").click(function () {
+    trigger.resetDevice();
   });
 });
