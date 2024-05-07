@@ -105,6 +105,21 @@
   letter-spacing: 0.3ch;
 }
 
+.trigger .change-state {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  width: 4.6em;
+  margin: 0.3em;
+  padding: 1em 3.2em;
+  border-radius: 4em;
+  background-color: hsla(160, 19%, 16%, 1);
+  color: hsla(69, 85%, 56%, 1);
+  font-size: 0.8em;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3),
+    inset 0 1px 1px rgba(255, 255, 255, 0.2);
+}
+
 .trigger .trigger-delete {
   font-size: 1em;
 }
