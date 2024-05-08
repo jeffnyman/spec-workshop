@@ -13,7 +13,7 @@ const trigger: Trigger = {
   },
 };
 
-$(document).ready(function () {
+$(function () {
   console.log("Spec Workshop");
 
   let activation_code: string;
@@ -33,7 +33,7 @@ $(document).ready(function () {
     $("#trigger").removeClass("hidden");
   });
 
-  $("#reset").click(function () {
+  $("#reset").on("click", function () {
     trigger.resetDevice();
   });
 
@@ -84,9 +84,9 @@ $(document).ready(function () {
     },
   });
 
-  $("input").blur(function () {
+  $("input").on("blur", function () {
     if (!$(this).valid()) {
-      $(this).focus();
+      $(this).trigger("focus");
       return false;
     }
   });
